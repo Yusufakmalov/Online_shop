@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.urls import path
 from . import views
 
@@ -11,5 +10,4 @@ urlpatterns = [
     path('<int:id>/<slug:slug>/', views.product_detail,
         name='product_detail'),
 ]
-=======
->>>>>>> af8e582138f233932f9826b966a994aa330a2d78
+

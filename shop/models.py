@@ -20,6 +20,8 @@ class Category(models.Model):
         ]
         verbose_name = 'category'
         verbose_name_plural = 'categories'
+
+    objects = models.Manager()
  
     def __str__(self):
         return self.name
@@ -44,7 +46,7 @@ class Product(models.Model):
  
     def get_absolute_url(self):
         return reverse('shop:product_detail',
-                        args=[self.id, self.slug])
+                        args=[self.pk, self.slug])
  
  
     class Meta:
@@ -56,3 +58,5 @@ class Product(models.Model):
         ]
     def __str__(self):
         return self.name
+
+    objects = models.Manager()
