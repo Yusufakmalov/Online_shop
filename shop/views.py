@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Product
 from cart.forms import CartAddProductForm
@@ -31,3 +32,5 @@ def product_detail(request, id, slug):
 
 
 
+=======
+>>>>>>> af8e582138f233932f9826b966a994aa330a2d78
